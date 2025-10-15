@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function removeParagraph() {
+            var p1=document.querySelector("#p1");
+            p1.remove();
+        }
+    </script>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p id="p1" style="color: red">This is the Dom Page.</p>
+    <p>It is used to demonstrate the Document Object Model in Html.</p>
+    <p>Feel Free to Explore</p>
+
+    <input type="radio" onchange="removeParagraph()"/>
+    <label for="">Remove P1</label>
+</body>
+</html>

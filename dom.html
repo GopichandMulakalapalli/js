@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function modifyDOM() {
+        // 1. Access h2 Dom Element
+        var h2DomElement = document.querySelector("h2");
+        var pDomElement = document.querySelector("p");
+        var buttonDomElement = document.querySelector("button");
+        var listItemDomElement = document.querySelector("li");
+        var image =document.querySelector("img");
+        
+        // 2. Modify Dom Element
+        h2DomElement.innerText = "Javascript  is super super Easy";
+        pDomElement.innerText =
+          "JavaScript is a high-level, interpreted programming language primarily known for its role in making web pages interactive and dynamic. It is the scripting language of the web, and is fully integrated with HTML and CSS.";
+        buttonDomElement.innerText = "Document Modified";
+        listItemDomElement.innerText = "Javascript is a programing language";
+        image.src="https://static.cricbuzz.com/a/img/v1/1080x608/i1/c768339/rohit-sharma-as-captain-has-an-888-success-rate-in-multi-nation-odi-events-5-teams.jpg";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>DOCUMENT OBJECT MODEL</h2>
+      <img src="https://icecric.news/wp-content/uploads/2023/03/Shubman-Gill-2-scaled.webp" alt="" width="300" height="300">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        laudantium corrupti amet natus temporibus nulla officiis! Nisi
+        exercitationem itaque facere. Libero minima repellendus adipisci tenetur
+        aut quaerat voluptate et aspernatur ullam veritatis quo deserunt quod
+        maiores tempore quia ipsa rerum laboriosam qui consequatur, sapiente
+        totam itaque distinctio eius ad? Ipsa.
+      </p>
+      <ol>
+        <li>html is a language</li>
+      </ol>
+      <button onclick="modifyDOM()">Explore More</button>
+    </div>
+  </body>
+</html>

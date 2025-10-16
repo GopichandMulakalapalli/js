@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Button Example</title>
+      <script>
+        function createUI() {
+        const button = document.createElement("button");
+        button.innerText= "javascript Button";
+        button.onclick = function() {
+            var img = document.createElement("img");
+            img.src ="https://m.media-amazon.com/images/I/610pl1tR+mL._UF894,1000_QL80_.jpg";
+            img.width ="150";
+            img.height = "150";
+            document.querySelector("body").appendChild(img);
+        };
+
+        const ol = document.createElement("ol");
+        const li1 = document.createElement("li");
+        const li2 = document.createElement("li");
+        const li3 = document.createElement("li");
+        const li4 = document.createElement("li");
+        li1.innerText = "Html";
+        li2.innerText = "Css";
+        li3.innerText = "Js";
+        li4.innerText = "ReactJs";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+
+        document.querySelector("body").appendChild(button);
+        document.querySelector("body").appendChild(ol);
+
+        }
+        function reuseUI() {
+            createUI();
+            createUI();
+            createUI();
+            createUI();
+        }
+    </script>
+
+</head>
+<body onload="reuseUI()"></body>
+</html>
